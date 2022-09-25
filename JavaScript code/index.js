@@ -1,9 +1,15 @@
-const objectA = {
-	a: 10,
-	b: true
+const myCity = {
+	city: 'New York'
 }
-const copy0fA = objectA
-copy0fA.a = 20
-console.log(objectA)
-copy0fA.c = 'abc'
-console.log(objectA)
+
+myCity.city = 'las Vegas',
+
+	myCity.popular = true,
+
+	myCity.country = 'USA',
+
+	delete myCity.country
+
+console.log(myCity.city)
+console.log(myCity.popular)
+console.log(myCity.country)
