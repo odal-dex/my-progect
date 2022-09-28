@@ -1,15 +1,9 @@
-const myCity = {
-	city: 'New York'
+const person = {
+	name: 'Bob',
+	age: 25
 }
+const person2 = Object.assign({}, person)
+person2.age = 26
 
-myCity.city = 'las Vegas',
-
-	myCity.popular = true,
-
-	myCity.country = 'USA',
-
-	delete myCity.country
-
-console.log(myCity.city)
-console.log(myCity.popular)
-console.log(myCity.country)
+console.log(person2.age)
+console.log(person.age)
