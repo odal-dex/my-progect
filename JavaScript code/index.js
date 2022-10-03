@@ -1,14 +1,9 @@
-const personOne = {
-	name: 'Bob',
-	age: 21
+const button = {
+	with: 200,
+	text: 'Buy'
 }
 
-function increasePersonAge(person) {
-	const updatedPerson = Object.assign({}, person)
-	updatedPerson.age += 1
-	return updatedPerson
+const redButton = {
+	...button,
+	color: 'red'
 }
-
-const updatedPersonOne = increasePersonAge(personOne)
-console.log(personOne.age)
-console.log(updatedPersonOne.age)
