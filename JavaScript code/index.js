@@ -1,9 +1,16 @@
-const button = {
-	with: 200,
+const buttonInfo = {
 	text: 'Buy'
 }
 
-const redButton = {
-	...button,
-	color: 'red'
+const buttonStyle = {
+	color: 'yellow',
+	width: 200,
+	height: 300
 }
+
+const button = {
+	...buttonInfo,
+	...buttonStyle
+}
+
+console.log(button)
