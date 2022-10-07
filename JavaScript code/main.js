@@ -1,11 +1,12 @@
-const newPost = (post, addedAt = Date()) => ({
-	...post,
-	addedAt
-})
-
-const firstPost = {
-	id: 1,
-	autor: 'Alex'
+const fnWidthError = () => {
+	throw new Error('Some error')
 }
 
-newPost(firstPost)
+try {
+	fnWidthError()
+} catch (error) {
+	console.error(error)
+	console.log(error.message)
+}
+
+console.log('Continue...')
